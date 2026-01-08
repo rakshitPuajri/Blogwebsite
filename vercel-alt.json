@@ -1,0 +1,21 @@
+{
+  "version": "2",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "_site"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/_site/$1"
+    }
+  ],
+  "env": {
+    "NODE_VERSION": "18.17.0"
+  }
+}

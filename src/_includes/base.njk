@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }} | {% endif %}My Blog</title>
+    <meta name="description" content="{{ description or 'Welcome to my blog' }}">
+    <meta name="theme-color" content="#3498db">
+    <meta property="og:title" content="{{ title or 'My Blog' }}">
+    <meta property="og:description" content="{{ description or 'Welcome to my blog' }}">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="Blog Feed">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="header-content">
+                <h1 class="site-title"><a href="/">My Blog</a></h1>
+                <p class="site-tagline">Thoughts, stories, and insights</p>
+            </div>
+            <nav class="nav">
+                <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+                <a href="/archive/" class="nav-link {% if page.url.startsWith('/archive') %}active{% endif %}">Archive</a>
+                <a href="/about/" class="nav-link {% if page.url.startsWith('/about') %}active{% endif %}">About</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            {{ content | safe }}
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 My Blog. Built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+            <p><a href="/feed.xml">Subscribe via RSS</a></p>
+        </footer>
+    </div>
+</body>
+</html>

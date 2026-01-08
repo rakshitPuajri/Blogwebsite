@@ -1,0 +1,38 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My Blog</title>
+  <subtitle>Thoughts, stories, and insights</subtitle>
+  <link href="https://yourdomain.com/" rel="alternate"/>
+  <link href="https://yourdomain.com/feed.xml" rel="self"/>
+  <id>urn:uuid:{{ metadata.feed.uuid }}</id>
+  <updated>{{ collections.blog[0].date.toISOString() }}</updated>
+  <author>
+    <name>Your Name</name>
+  </author>
+  {% for post in collections.blog %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="https://yourdomain.com{{ post.url }}"/>
+      <link rel="alternate" type="text/html" href="https://yourdomain.com{{ post.url }}"/>
+      <id>urn:uuid:{{ post.url }}</id>
+      <published>{{ post.date.toISOString() }}</published>
+      <updated>{{ post.date.toISOString() }}</updated>
+      <summary>{{ post.data.description }}</summary>
+      <content type="html">{{ post.templateContent | safe }}</content>
+      <author>
+        <name>Your Name</name>
+      </author>
+      {% if post.data.tags %}
+        {% for tag in post.data.tags %}
+          {% if tag !== "blog" %}
+            <category term="{{ tag }}"/>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </entry>
+  {% endfor %}
+</feed>
