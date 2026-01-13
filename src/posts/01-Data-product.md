@@ -61,23 +61,23 @@ A data product can be thought of as a node in the data mesh: it takes one or mor
  {% image "src/assets/images/Dataproduct.png", "Data Product", "100vw" %}
 
 
-1. Data aspect
+1. ##### Data aspect
 - The core dataset: business objects (e.g., sales orders, material master), facts, or analytical aggregates.
 - Exposed in a read-only, consistent, and stable shape designed for sharing.
 
-2. API & event aspect
+2.  ##### API & event aspect
 - How consumers access the data: REST APIs, OData, SQL endpoints, events, or open-sharing protocols such as Delta Sharing in modern data fabrics.​
 - Interoperable schemas that allow integration with tools across the landscape.​
 
-3. Metadata aspect
+3. ##### Metadata aspect
 - Human- and machine-readable descriptions: purpose, schema, lineage, quality indicators, and dependencies.​
 - Stored and searchable in a data catalog or product dictionary so others can easily discover and evaluate the product.​
 
-4. Product aspect
+4. ##### Product aspect
 - managed with a product mindset: defined owner, roadmap, and lifecycle from creation to deprecation.​
 - Quality, documentation, and user feedback are treated as first-class concerns, not afterthoughts.​
 
-5. Business semantic aspect
+5. ##### Business semantic aspect
 - Links raw technical structures to business meaning via a semantic model (for example, entities, relationships, measures, and hierarchies).​
 - Ensures that data consumers across domains interpret concepts like "sales order", "net value", or "material" consistently
 
