@@ -246,14 +246,22 @@ em, i {
 }
 
 .post-preview {
-  padding: var(--spacing-lg);
   background-color: var(--light-gray);
   border-left: 4px solid var(--primary-color);
   border-radius: 4px;
   transition: var(--transition);
 }
 
-.post-preview:hover {
+/* Make the whole preview a link */
+.post-preview a.post-link {
+  display: block;
+  padding: var(--spacing-lg);
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-preview a.post-link:hover,
+.post-preview:hover a.post-link {
   box-shadow: var(--box-shadow-lg);
   transform: translateX(4px);
   background-color: #f8f9fa;
@@ -266,13 +274,10 @@ em, i {
 .post-preview h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.5rem;
-}
-
-.post-preview h3 a {
   color: var(--secondary-color);
 }
 
-.post-preview h3 a:hover {
+.post-preview a.post-link:hover h3 {
   color: var(--primary-color);
 }
 
@@ -378,6 +383,23 @@ em, i {
   margin-bottom: var(--spacing-lg);
 }
 
+/* Make images inside posts responsive and fit viewport */
+.post-content picture,
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.75rem auto;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+/* Ensure the shortcode-generated images behave as full-width elements when appropriate */
+.post-content picture {
+  width: 100%;
+}
+
+
 /* ========================================
    Code Blocks
    ======================================== */
@@ -438,33 +460,45 @@ blockquote {
 }
 
 /* ========================================
-   Archive
+   Blogs
    ======================================== */
 
-.archive {
+.blogs {
   display: grid;
   gap: var(--spacing-lg);
 }
 
-.archive-item {
-  padding: var(--spacing-lg);
+.blogs-item {
   background-color: var(--light-gray);
   border-left: 4px solid var(--primary-color);
   border-radius: 4px;
   transition: var(--transition);
 }
 
-.archive-item:hover {
+.blogs-item a.blogs-link {
+  display: block;
+  padding: var(--spacing-lg);
+  color: inherit;
+  text-decoration: none;
+}
+
+.blogs-item a.blogs-link:hover,
+.blogs-item:hover a.blogs-link {
   box-shadow: var(--box-shadow-lg);
   transform: translateX(4px);
 }
 
-.archive-item h3 {
+.blogs-item h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  color: var(--secondary-color);
 }
 
-.archive-item time {
+.blogs-item a.blogs-link:hover h3 {
+  color: var(--primary-color);
+}
+
+.blogs-item time {
   display: block;
   color: #666;
   font-size: 0.9rem;

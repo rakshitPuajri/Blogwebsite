@@ -167,7 +167,7 @@ console.log(greeting);
 
 ## Conclusion
 
-That's it! Your post is live on the main page and archive.
+That's it! Your post is live on the main page and blogs.
 ```
 
 ## Publishing Workflow

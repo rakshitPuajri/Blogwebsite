@@ -64,7 +64,7 @@ Blogwebsite/
 │   ├── assets/                    # Static assets (images, etc.)
 │   ├── index.md                   # Home page
 │   ├── about.md                   # About page
-│   ├── archive.md                 # Archive page
+│   ├── blogs.md                 # Blogs page
 │   ├── feed.njk                   # RSS feed
 │   ├── sitemap.njk               # XML sitemap
 │   └── robots.txt                 # SEO robots file

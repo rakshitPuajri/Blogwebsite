@@ -18,7 +18,7 @@ Your production-ready blogging website has been successfully created and is read
 #### 📝 Content Files
 - ✅ `src/index.md` - Homepage with recent posts
 - ✅ `src/about.md` - About page
-- ✅ `src/archive.md` - Complete posts archive
+- ✅ `src/blogs.md` - Complete posts archive
 - ✅ `src/feed.njk` - RSS/Atom feed
 - ✅ `src/sitemap.njk` - XML sitemap for SEO
 - ✅ `src/robots.txt` - SEO robots configuration
@@ -63,7 +63,7 @@ Your production-ready blogging website has been successfully created and is read
 - ✅ `_site/` directory with all static files
 - ✅ `_site/index.html` - Homepage
 - ✅ `_site/about/index.html` - About page
-- ✅ `_site/archive/index.html` - Archive page
+- ✅ `_site/blogs/index.html` - Blogs page
 - ✅ `_site/posts/*/index.html` - Blog post pages
 - ✅ `_site/feed.xml` - RSS feed
 - ✅ `_site/sitemap.xml` - XML sitemap
@@ -187,7 +187,7 @@ Blogwebsite/
 │   ├── css/            # Styling
 │   ├── index.md        # Home page
 │   ├── about.md        # About page
-│   └── archive.md      # Archive page
+│   └── blogs.md      # Blogs page
 ├── _site/              # Generated output (auto-created)
 ├── .github/workflows/  # GitHub Actions
 ├── README.md           # Full documentation

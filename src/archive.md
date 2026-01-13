@@ -1,16 +1,8 @@
 ---
 layout: base.njk
-title: Archive
+title: Archive (moved)
+permalink: /archive/
 ---
 
-# All Articles
-
-<div class="archive">
-    {% for post in collections.blog %}
-        <article class="archive-item">
-            <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-            <time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time>
-            <p>{{ post.data.description }}</p>
-        </article>
-    {% endfor %}
-</div>
+<meta http-equiv="refresh" content="0; url=/blogs/" />
+<p>This page has moved to <a href="/blogs/">/blogs/</a>. You will be redirected shortly.</p>

@@ -226,7 +226,7 @@ Use platform-specific secret management instead.
 2. **Check all pages**:
    - Homepage `/`
    - Blog post pages
-   - Archive `/archive/`
+   - Blogs `/blogs/`
    - About `/about/`
 3. **Test mobile responsiveness**
 4. **Check RSS feed**: `/feed.xml`

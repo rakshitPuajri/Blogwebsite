@@ -43,7 +43,7 @@ Status: ✅ Ready for Production
 ```
 ✅ src/index.md             - Homepage with recent posts
 ✅ src/about.md             - About page
-✅ src/archive.md           - All posts archive
+✅ src/blogs.md           - All posts archive
 ✅ src/feed.njk             - RSS/Atom feed template
 ✅ src/sitemap.njk          - XML sitemap template
 ✅ src/robots.txt           - SEO robots file
@@ -102,7 +102,7 @@ Status: ✅ Ready for Production
 ✅ _site/                   - All generated static files
 ✅ _site/index.html         - Homepage
 ✅ _site/about/index.html   - About page
-✅ _site/archive/index.html - Archive page
+✅ _site/blogs/index.html - Blogs page
 ✅ _site/posts/*/index.html - Blog post pages (3)
 ✅ _site/feed.xml           - RSS feed
 ✅ _site/sitemap.xml        - XML sitemap
@@ -156,7 +156,7 @@ Status: ✅ Ready for Production
 - [x] Markdown blog posts
 - [x] Layout templates (Nunjucks)
 - [x] Tag system
-- [x] Archive page
+- [x] Blogs page
 - [x] About page
 - [x] Homepage with recent posts
 

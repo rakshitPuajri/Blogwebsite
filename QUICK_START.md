@@ -134,7 +134,7 @@ Blogwebsite/
 │   ├── css/                # Styling
 │   ├── index.md            # Home page
 │   ├── about.md            # About page
-│   ├── archive.md          # Post archive
+│   ├── blogs.md          # Post archive
 │   └── feed.njk            # RSS feed
 ├── _site/                  # Generated output (auto-created)
 ├── eleventy.config.js      # Eleventy config
@@ -159,7 +159,7 @@ Blogwebsite/
 - 3 example blog posts
 - Home page template
 - About page template
-- Archive page
+- Blogs page
 - Professional CSS styling
 
 ## Next Steps

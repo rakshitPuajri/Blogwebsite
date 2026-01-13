@@ -63,7 +63,7 @@ npm run watch      # Watch for changes (no server)
 - 🏠 **Home**: [src/index.md](src/index.md)
 - 📝 **Blog Posts**: [src/posts/](src/posts/)
 - ℹ️ **About**: [src/about.md](src/about.md)
-- 📋 **Archive**: [src/archive.md](src/archive.md)
+- 📋 **Blogs**: [src/blogs.md](src/blogs.md)
 - 📡 **RSS Feed**: [src/feed.njk](src/feed.njk)
 - 🗺️ **Sitemap**: [src/sitemap.njk](src/sitemap.njk)
 
@@ -112,7 +112,7 @@ See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) - Option 2
 │   │   └── style.css          # All styling
 │   ├── index.md               # Home page
 │   ├── about.md               # About page
-│   ├── archive.md             # Archive page
+│   ├── blogs.md             # Blogs page
 │   └── feed.njk               # RSS feed
 │
 ├── eleventy.config.js          # Eleventy config

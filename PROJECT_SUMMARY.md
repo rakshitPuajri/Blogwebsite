@@ -32,7 +32,7 @@ Blogwebsite/
 │   ├── assets/                         # Static assets (images, etc.)
 │   ├── index.md                        # Home page
 │   ├── about.md                        # About page
-│   ├── archive.md                      # Archive page
+│   ├── blogs.md                      # Blogs page
 │   ├── feed.njk                        # RSS feed template
 │   ├── sitemap.njk                     # XML sitemap
 │   └── robots.txt                      # SEO robots file
@@ -130,7 +130,7 @@ Blogwebsite/
 |--------|-------|
 | Build Time | < 1 second |
 | Output Size | < 2MB |
-| Page Count | 8 (homepage, about, archive, 3 posts, feed, sitemap) |
+| Page Count | 8 (homepage, about, blogs, 3 posts, feed, sitemap) |
 | CSS Size | ~35KB (minified) |
 | JavaScript | Minimal, none required |
 | Browser Support | All modern browsers |
@@ -220,7 +220,7 @@ Edit `src/about.md`:
 
 ### Pages
 - `index.md` - Homepage with recent posts
-- `archive.md` - All posts archive
+- `blogs.md` - All posts archive
 - `about.md` - About page
 
 ### Feeds & SEO
