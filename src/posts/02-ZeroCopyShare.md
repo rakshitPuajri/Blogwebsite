@@ -20,7 +20,7 @@ Unlike traditional approaches that required extracting data from source systems 
 
  {% image "src/assets/images/Delatsharing.png", "Delta Sharing", "100vw" %}
   
-## Primary goal of deltashare ?
+## Primary goal of delta share
 
 Delta sharing protocol was designed keeping following four primary goals in mind
 
@@ -41,7 +41,7 @@ This table shows how Delta Sharing's goals map directly to key data product prin
 | Massive scale      | → | Reliability & scalability |
 
 
-### How does it work in real?
+## How does it work in real?
 
 In SAP Datasphere, tables and CDS views can be published as data products by registering them in the data marketplace or catalog, where they appear as reusable, governed assets. These data products are then shared with consuming systems via the Delta Sharing protocol. In the following sections, we will explore Delta Sharing through a practical example that uses Databricks as the data platform and Power BI as the reporting tool.
 
